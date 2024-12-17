@@ -1,0 +1,226 @@
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 15px;
+  line-height: 1.5rem;
+
+  color: #585858;
+  background-color: #fff;
+}
+
+a {
+  color: #585858;
+}
+
+.container {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.headline {
+  font-family: "Lato", sans-serif;
+  font-size: 45px;
+  font-weight: 900;
+
+  color: #2c2c2c;
+}
+
+.headline > span {
+  color: #004af2;
+}
+
+.button {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+
+  width: 200px;
+  height: 45px;
+
+  border-radius: 5px;
+  box-shadow: 0px 10px 15px 0px #00000033;
+  background: linear-gradient(90deg, #ff903e, #ff2c2c 100%);
+}
+
+.button > a {
+  color: #fff;
+}
+/* ============ */
+.hero{
+  width: 99.2vw;
+  height: 53vh;
+  background: url('../Assets/pics/privacy/text-intro.png') 0px 90% /100% round no-repeat;
+}
+/* ============ */
+
+
+
+.header {
+  width: 100%;
+  height: 85px;
+
+  background-color: #00000033;
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  z-index: 1000;
+
+  color: #fff;
+}
+
+.header > .container {
+  height: 85px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header > .container > .header-brandSection {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.header > .container > .header-brandSection > .header-logo {
+  width: 25px;
+  height: 25px;
+
+  background: url("../Assets/svg/Header/Logo.svg");
+}
+
+.header > .container > .header-brandSection > .header-name {
+  font-family: "PT Sans", sans-serif;
+  font-weight: bold;
+}
+/* TODO сделать синий цвет у элементов активных анимок 004AF2 */
+.header-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+}
+
+.header-nav > li > a {
+  color: #fff;
+}
+
+/* ============ */
+
+.inner-policy{
+  width: 75%;
+}
+
+.policy-headline{
+  margin: 60px 0px 50px;
+}
+.privacy{
+  margin-bottom: 40px;
+}
+
+.privacy-text > * {
+  margin: 20px 0px;
+}
+
+.privacy-text > .article_header{
+  font-size: 24px;
+  font-weight: 800;
+  color: #2C2C2C;
+}
+.article-ordered-list{
+  transform: translate(1rem, 0px);
+}
+
+.home-button{
+  margin: 50px 00px 120px;
+}
+/* ============ */
+
+
+footer {
+  /* width: 1300px; */
+  height: 200px;
+
+  position: relative;
+  background: #f9f9f9;
+}
+
+.footer-inner {
+  /* width: 440px; */
+  height: 150px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.footer-logo {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+
+  margin-top: 40px;
+
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.logo {
+  width: 25px;
+  height: 25px;
+
+  background: url("../Assets/svg/footer/logo.svg");
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  font-size: 12px;
+}
+
+.links > a {
+  color: #004af2;
+}
+
+footer::before {
+  content: "";
+
+  width: 490px;
+  height: 240px;
+
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+
+  background: url("../Assets/svg/footer/left.svg") -70px 110px no-repeat;
+}
+
+footer::after {
+  content: "";
+
+  width: 490px;
+  height: 240px;
+
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+
+  background: url("../Assets/svg/footer/right.svg") 70px 110px no-repeat;
+}
